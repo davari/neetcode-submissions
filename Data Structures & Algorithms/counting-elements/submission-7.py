@@ -1,0 +1,8 @@
+class Solution:
+    def countElements(self, arr: List[int]) -> int:
+        counter = 0
+        for num in arr:
+            if num+1 in arr:
+                counter += 1
+        
+        return counter
